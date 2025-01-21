@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo Fetcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Logo Fetcher</h1>
+      <div class="search-container">
+        <input 
+          type="text" 
+          id="brandInput" 
+          placeholder="Enter brand name (e.g., apple, google, microsoft)"
+        >
+        <div class="options">
+          <label class="checkbox-container">
+            <input type="checkbox" id="removeBackground">
+            Remove Background
+          </label>
+        </div>
+        <button onclick="fetchLogo()">Search</button>
+      </div>
+      
+      <div id="result" class="result-container">
+        <div id="logoPreview" class="logo-preview"></div>
+        <div id="downloadButtons" class="download-buttons"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
